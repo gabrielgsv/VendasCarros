@@ -1,1 +1,15 @@
-<p>novidades works!</p>
+
+<div class="container">
+  <div class="card" *ngFor="let car of cars">
+    <img src="../../assets/CarrosAnuncios/{{car.image}}" class="card-image">
+    <div class="content">
+      <p class="title">
+        {{car.name}} | R$ {{car.price}}
+      </p>
+      <hr>
+      <p>
+        {{car.year}} | {{car.change}} | {{car.change}} | {{car.motor}}
+      </p>
+    </div>
+  </div>
+</div>

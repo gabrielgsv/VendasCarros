@@ -1,3 +1,102 @@
-p {
-  margin: 20% 50%
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-brands {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brands{
+  max-width: 120px;
+  min-width: 90px;
+  height: 70px;
+  display: relative;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.item{
+  min-width: 350px;
+  max-width: 360px;
+  height: 230px;
+  display: relative;
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.family {
+  background-image: url("../../assets/familyCar.jpg");
+}
+
+.electry {
+  background-image: url("../../assets/electryCar.jpg");
+}
+
+.sportive {
+  background-image: url("../../assets/sportiveCar.jpg");
+}
+
+.jeep {
+  background-image: url("../../assets/offRoad.jpeg");
+}
+
+.chevrolet {
+  background-image: url("../../assets/logo-chevrolet.png");
+}
+.fiat {
+  background-image: url("../../assets/logo-fiat.png");
+}
+.ford {
+  background-image: url("../../assets/logo-ford.png");
+}
+.vm {
+  background-image: url("../../assets/logo-VW.jpg");
+}
+.hyunday {
+  background-image: url("../../assets/logo-hyunday.png");
+}
+
+.renault {
+  background-image: url("../../assets/logo-reanult.jpg");
+}
+
+.toyota {
+  background-image: url("../../assets/logo-toyota.jpg");
+}
+
+.honda {
+  background-image: url("../../assets/logo-honda.jpg");
+}
+
+.img-text {  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -10;
+  background-position: center;
+}
+
+.overlay {
+  top: 0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -5;
+  border-radius: 20px;
+  font-family: 'Verdana';
+  font-size: 20pt;
+  text-shadow: 2px 2px 4px #000000
 }
