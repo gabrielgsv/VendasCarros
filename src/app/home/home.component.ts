@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { homeItems, homeBrands } from '../../models/homeItem-models'
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public homeItems = homeItems
+  public homeBrands = homeBrands
 
   constructor() { }
 

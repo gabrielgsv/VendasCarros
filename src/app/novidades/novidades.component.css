@@ -1,3 +1,39 @@
-p {
-  margin: 20% 50%
+.container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  background-color: #f5f5f5;
+  width: 350px;
+  text-align: center;
+  border-radius: 20px;
+  color: #000;
+  height: 350px;
+}
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 350px;
+  height: 230px;
+  display: block;
+  object-fit: cover;
+}
+
+.content {
+  padding-bottom: 10px;
+}
+
+
+.title {
+  font-size: 20pt;
+  margin: 10px;
+}
+
+hr {
+  width: 20%;
 }

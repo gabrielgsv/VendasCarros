@@ -1,1 +1,16 @@
-<p>home works!</p>
+<div class="container">
+  <div class="item" *ngFor="let homeItem of homeItems">
+    <div class="img-text {{homeItem.image}}">
+      <div class="overlay">
+        {{homeItem.name}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-brands">
+  <div class="brands" *ngFor="let homeBrand of homeBrands">
+    <div class="img-text {{homeBrand.image}}">
+    </div>
+  </div>
+</div>

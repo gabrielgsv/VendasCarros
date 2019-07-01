@@ -1,4 +1,6 @@
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { Person } from '../../models/person-models'
 
 @Component({
   selector: 'app-contato',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
-  constructor() { }
+  public form: FormGroup
+  public person: Person[] = []
 
-  ngOnInit() {
+  constructor(private fb: FormBuilder) { 
+    this.form = this.fb.group({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
   }
 
+  ngOnInit() {
+
+  }
+
+  submit() {
+    console.log(this.form.controls.value)
+  }
 }
